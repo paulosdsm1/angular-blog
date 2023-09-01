@@ -2,11 +2,11 @@
     
     <div class="container__small-card-content">
          <div class="small-card__photo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDNhu4CGx426aES2spPVuJGdzLkHx0biwQQ&usqp=CAU" alt=""
+        <img src="{{ photoCover }}" alt=""
         >
         </div>
         <div class="big-card__title">
-            <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+            <h1><a [routerLink]="['content', id]">{{ cardTitle }}</a></h1>
         </div>
     </div>
    <div class="container__small-card-separator"><hr></div>
